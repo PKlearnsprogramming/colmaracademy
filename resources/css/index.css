@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* GENERAL STUFF */
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: darkslategrey;
+    background-color: white;
+    opacity: 0.9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+}
+
+header #logo-title {
+    display: flex;
+    align-items: center;
+}
+
+#logo-title p {
+    font-size: 20px;
+    color: black;
+    margin: 4px;
+}
+
+header .container {
+    width: 50%;
+    height: 32px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 24px;
+}
+   
+header .container img {
+    max-height: 100%;
+    width: auto;
+    display: block;
+}
+  
+nav ul {
+    list-style: none;
+    display: inline;
+    margin-right: 24px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 8px;
+}
+
+nav a {
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+/* MAIN BODY */
+
+.main {
+    position: relative;
+    top: 55px;
+}
+
+/* BANNER */
+
+#banner {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+}
+
+/* DIT PLAATJE NET ZO BREED KRIJGEN ALS PLAATJE ERONDER */
+
+.banner-img {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.banner-img .container {
+    height: auto;
+    overflow: hidden;
+}
+
+#banner .container img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    width: 25%;
+    padding: 32px 24px;
+}
+
+.banner-text .button {
+    width: 100%;
+    background-color: darkslategrey;
+    text-align: center;
+    padding: 2px;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* MAIN INFO */
+
+#info {
+    display: flex;
+}
+
+.info-main {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.info-main .container {
+    height: auto;
+    overflow: hidden;
+}
+
+.info-main .container img {
+    width: 100%;
+    height: auto;
+}
+
+.attribution {
+    font-size: 16px;
+}
+
+.info-sub {
+    padding: 16px 0;
+    width: 40%;
+    border-left: 2px solid lightgrey;
+}
+
+.info-sub-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    transition: background-color .5s;
+}
+
+.info-sub-item:hover {
+    background-color: lightgray;
+}
+
+.info-sub-item .container {
+    width: 35%;
+    height: auto;
+    overflow: hidden;
+    margin: 16px;
+}
+
+.info-sub-item .container img {
+    width: 100%;
+    height: auto;
+}
+
+.info-sub-item .sub-text {
+    width: 65%;
+}
+
+.info-sub-item .sub-text a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+/* COURSES */
+
+#courses {
+    background-color: lightgray;
+    padding: 32px 72px;
+}
+
+#courses h2 {
+    text-align: center;
+}
+
+.courses-sub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.courses-sub-item {
+    width: 25%;
+    margin: 16px;
+    background-color: white;
+}
+
+.courses-sub-item .container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.courses-sub-item .container img {
+    width: 100%;
+    height: auto;
+}
+
+.courses-sub-item .sub-text {
+    width: auto;
+    padding: 16px;
+}
+
+.courses-sub-item .sub-text p {
+    overflow-wrap: break-word;
+}
+
+/* THESIS */
+
+#thesis h2 {
+    text-align: center;
+    margin-top: 32px;
+}
+
+#thesis-content {
+    display: flex;
+}
+
+.thesis-main {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.thesis-main .container {
+    height: auto;
+    overflow: hidden;
+}
+
+.thesis-main .container video {
+    width: 100%;
+    height: auto;
+    border: 2px solid darkgrey;
+}
+
+.thesis-sub {
+    padding: 16px 0;
+    width: 40%;
+}
+
+.thesis-sub-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    transition: background-color .5s;
+}
+
+.thesis-sub-item:hover {
+    background-color: lightgray;
+}
+
+.thesis-sub-item .container {
+    width: 35%;
+    height: auto;
+    overflow: hidden;
+    margin: 16px;
+}
+
+.thesis-sub-item .container img {
+    width: 100%;
+    height: auto;
+}
+
+.thesis-sub-item .sub-text {
+    width: 65%;
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 24px;
+    border-top: 1px solid lightgrey;
+}
+
+footer ul {
+    list-style: none;
+    display: inline;
+}
+
+footer ul li {
+    display: inline;
+    margin: 8px;
+}
+
+footer a {
+    color: darkslategrey;
+    text-decoration: none;
+}
